@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <ul class="nav">
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="../pages/articles.html">Статьи</a></li>
+            <li><a href="../pages/catalog.html">Каталог</a></li>
+            <li><a href="../pages/contacts.html">Контакты</a></li>
+            <li><a href="../pages/gallery.html">Галерея</a></li>
+            <li><a href="../pages/page-nav.html">Навигация</a></li>
+            <li><a href="../pages/registration.html">Регистрация</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <h1>Регистрация</h1>
+    <!-- учимся -->
+    <form action="" method="get">
+      <fieldset>
+        <legend>Поля для ввода</legend>
+
+        <div class="form-group">
+          <label class="form-lable" for="name">Имя, Фамилия:</label>
+          <input
+            id="name"
+            value="Пупкин"
+            minlength="10"
+            maxlength="30"
+            placeholder="Введите имя пользывателя"
+            type="text"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-lable" for="email">Имейл</label>
+          <input type="email" name="email" id="email" placeholder="Имейл" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-lable" for="password">Пароль:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Пароль"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-lable" for="website">Адрес сайта:</label>
+          <input
+            type="url"
+            id="website"
+            name="website"
+            placeholder="https://mysite.name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label class="form-lable" for="file">Добавьте фотографию</label>
+          <input id="file" name="file" type="file" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Укажите пол:</legend>
+        <div class="form-group">
+          <input type="radio" name="gender" id="gender-male" value="male" />
+          <label for="gender-male">Мужской</label>
+        </div>
+
+        <div class="form-group">
+          <input type="radio" name="gender" id="gender-female" value="female" />
+          <label for="gender-female">Женский</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="form-group">
+          <label class="form-lable" for="age">Возвраст:</label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            min="1"
+            max="200"
+            placeholder="Возраст"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-lable" for="date">Дaтa рождения</label>
+          <input type="date" name="date" id="date" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Кухни</legend>
+        <div class="form-group">
+          <input type="checkbox" name="kitchen" id="kit-ua" />
+          <label for="kit-ua">Ukranian</label>
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" name="kitchen" id="kit-gr" />
+          <label for="kit-gr">Grusian</label>
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" name="kitchen" id="kit-it" />
+          <label for="kit-it">Italian</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>О себе:</legend>
+        <div class="form-group">
+          <textarea
+            class="full-size-textarea"
+            placeholder="Введите информацию"
+            name="txt"
+            id="txt"
+            cols="20"
+            rows="7"
+          ></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="form-group d-flex">
+          <button class="btn" type="submit">Зарегистрироваться</button>
+          <button class="btn" type="reset">cброс</button>
+        </div>
+      </fieldset>
+    </form>
+
+    <footer>&copy;Veronika Filippova</footer>
+  </body>
+</html>

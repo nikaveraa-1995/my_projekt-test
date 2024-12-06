@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+}
+
+ body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: "Sour Gummy", serif;
+  font-weight: 500;
+  background-color: #d0e9e980;
+  background-image: url(../img/горы.jpeg), url(../img/montain2.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position:100% 0, center;
+  background-size:100px, cover;
+  position: relative;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin:0 auto;
+ }
+
+h1 {
+ text-align: center;
+ color: #1b093ad6;
+}
+
+/* НАВИГАЦИЯ ВЕРХНЯЯ */
+.nav {
+  /* для выравнивания элементов в ряд */
+display: flex; 
+justify-content: center;  
+  /* убрать маркеры   */
+list-style-type: none;
+/* убрать отступы */
+padding: 0;
+/* убрать внешние отступы */
+margin:0;
+}
+
+/* стили для элементов списка */
+.nav li {
+  /* отступ между ссылками */
+  margin-right: 20px;
+}
+
+.nav a {
+  background-color: #bfdbe9;
+  padding: 1em;
+  display: block;
+  color: black;
+  text-transform: uppercase;
+  transition: 0.25s;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+/* изменение при наведении */
+.nav a:hover {
+  transform: scale(1.1) translateY(-2px);
+  background-color: rgb(177, 177, 211);
+  color: black;
+}
+
+.nav-2 a {
+  text-decoration: none;
+  color: hsl(0, 89%, 14%);
+  letter-spacing: 10px;
+  font-size: 30px;
+ 
+}
+.title a {
+/* убрать подчеркивание ссылки */
+text-decoration: none;
+  padding: 1em;
+  margin-left: 0;
+  padding-left: 0;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 10px;
+  font-size: 30px;
+  border-bottom: 7px solid #2f7f7f80;
+  padding-bottom: 5px;
+  /* расстояние между блоками */
+  display: flex;
+  gap: 20px;
+  }
+ 
+  .books{
+    background-image: url(../img/books.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
+    
+  }
+ .fon  {
+  background-color: #e8eae5dd;
+ }
+ .letter{
+  background-color: #b7c0e1ac;
+ }
+ .decoration {
+  text-decoration: underline;
+  color: blue;
+  transition: all 0.3s ease;
+}
+
+.decoration:hover{
+text-decoration: none;
+color: rgb(61, 26, 2);
+}
+
+.color {
+color: rgb(61, 4, 35);
+padding: 0;
+}
+.block{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* БОЛЬШАЯ БУКВА ПАРАГРАФА */
+.letter::first-letter {
+  font-size: 4em;
+  font-weight: bold;
+  color: rgb(154, 19, 19);
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  line-height:30%;
+}
+.icon {
+list-style-type: none;
+font-size: 20px;
+background-color: rgba(217, 192, 160, 0.753);
+width: 400px;
+border: 1px solid #000505;
+
+}
+.large-text{
+  font-size: 40px;
+  background-color: #1b093a7b;
+  border: 1px solid #000505;
+  padding: 10px;
+}
+.color-fon{
+  background-color: rgba(236, 236, 107, 0.645);
+  width: 400px;
+  }
+  .label{
+    background-color: #aa2d2d87;
+   color: #3c0000d6;
+  }
+.tekstura{
+  background-image: url(../img/tekstura.jpg);
+  background-position: center;
+  background-repeat:repeat;
+}
+/* рамка для фото в галереи */
+img {
+outline: 6px solid rgba(48, 1, 46, 0.793);
+transition: outline 0.3s ease;
+}
+img:hover{
+  outline: none;
+}
+/* форма контакты */
+fieldset {
+  max-width: 500px;
+  margin: 25px auto;
+  background-color: rgba(239, 242, 245, 0.871);
+}
+.form-group {
+ margin-top: 1em;
+ margin-bottom: 1em;
+}
+legend {
+transform: translateY(-10px);
+text-align: center;
+font-size: 20px;
+font-weight: bold;
+color: white;
+}
+.form-lable{
+  display: block;
+  margin-bottom: 0.5em;
+}
+input {
+  width: 100%;
+  padding: 10px 20px;
+}
+.adress{
+text-align: center;
+font-size: 20px;
+font-weight: bold;
+}
+.btn{
+  display: block;
+  padding: 10px 20px;
+  width: 100%;
+}
+.d-flex{
+  display: flex;
+  gap: 1em;
+}
+button{
+  padding: 10px;
+}
+ textarea, input{
+  width: 100%;
+}
+.full-size-textarea{
+  resize: vertical;
+  min-height: 100px;
+  max-height: 50vh;
+ }
+ input[type="radio"],
+ input[type="checkbox"] {
+   width: auto;
+ }
+ input[type="radio"],
+ input[type="checkbox"] :hover{
+  border: 40px dashed #000000;
+  outline: none;
+ }
+ input[type="text"]{
+  text-transform: capitalize;
+ }
+ footer{
+  position: fixed;
+  left: 0%;
+  bottom: 0%;
+ }
+/* супер красивый текст */
+ .blinking{
+  font-family: 'Pacifico', cursive;
+  font-size: 48px;
+  background: linear-gradient(90deg, #ff7eb3, #ff758f, #ff657f, #ff6f9c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: color-shift 3s infinite alternate;
+}
+
+@keyframes color-shift {
+  0% {
+      filter: hue-rotate(0deg);
+  }
+  100% {
+      filter: hue-rotate(360deg);
+  }
+}

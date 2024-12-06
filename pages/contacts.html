@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <!-- блок меню -->
+    <header>
+      <div class="container">
+        <nav>
+          <ul class="nav">
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="../pages/articles.html">Статьи</a></li>
+            <li><a href="../pages/catalog.html">Каталог</a></li>
+            <li><a href="../pages/contacts.html">Контакты</a></li>
+            <li><a href="../pages/gallery.html">Галерея</a></li>
+            <li><a href="../pages/page-nav.html">Навигация</a></li>
+            <li><a href="../pages/registration.html">Регистрация</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <form action="" method="get">
+      <h1>Контакты</h1>
+      <!-- блок адреса -->
+
+      <fieldset>
+        <legend>Адрес</legend>
+        <div class="form-group">
+          <p class="adress">Славутич</p>
+          <p class="adress">Черниговский 3/55</p>
+          <p class="adress">6 эт</p>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Карта</legend>
+        <div class="form-group">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d9930.93126451623!2d30.75916543718087!3d51.518117630486636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YfQtdGA0L3QuNCz0L7QstGB0LrQuNC5IDMg0YHQu9Cw0LLRg9GC0LjRhyDQutCw0YDRgtCw!5e0!3m2!1sru!2sua!4v1732285780210!5m2!1sru!2sua"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </fieldset>
+      <!-- форма контактов -->
+      <fieldset>
+        <legend>Обратная связь</legend>
+
+        <div class="form-group">
+          <label class="form-lable" for="name">Ваше имя:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Введите имя"
+            value="Veronika"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-lable" for="tel">Телефон:</label>
+          <input type="tel" name="tel" id="tel" placeholder="Телефон" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-lable" for="E-mail">E-mail</label>
+          <input type="email" name="email" id="E-mail" placeholder="Емейл" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-lable" for="text">Задайте вопрос:</label>
+          <input type="text" name="text" id="text" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="form-group-btn">
+          <button class="btn" type="submit">Отправить</button>
+        </div>
+      </fieldset>
+    </form>
+
+    <footer>&copy;Veronika Filippova</footer>
+  </body>
+</html>
